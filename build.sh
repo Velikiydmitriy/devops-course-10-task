@@ -3,7 +3,7 @@
 set -e
 
 echo "Source remote git repo:"
-source <(curl -s https://raw.githubusercontent.com/Velikiydmitriy/devops-course-10-task/master/build.sh)
+source <(curl -s https://raw.githubusercontent.com/MaksymSemenykhin/bash_scripts/master/output.sh)
 
 print_info "ls -la"
 
