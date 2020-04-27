@@ -11,6 +11,9 @@ print_title "NodeJS $(node -v)"
 print_title echo "NPM $(npm -v)"
 print_title echo "YARN $(yarn -v)"
 
+# Lint
+npm run linter
+
 # Build
 print_info "Start build"
 yarn install
