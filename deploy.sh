@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set-e
+set -e
 
 #input params
 BRANCHNAME=$1
