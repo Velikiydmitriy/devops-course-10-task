@@ -16,7 +16,7 @@ else
   print_error "ERROR. BRANCH NOT CORRECT. SCRIPT STOPED"
 fi
 
-#Prereq.
+# Prereq.
 DEPLOY_FOLDER ="/var/www/nodes/$BRANCHNAME"
 mkdir -p "$DEPLOY_FOLDER"
 print_title "Deploy folder: $DEPLOY_FOLDER"
