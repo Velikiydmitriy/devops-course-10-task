@@ -11,13 +11,13 @@ source <(curl -s https://raw.githubusercontent.com/MaksymSemenykhin/bash_scripts
 
 #Check input params
 if [[ ${BRANCHNAME} =~ ^(dev|master)$ ]]; then
-  print_title_ "Select branch: $BRANCHNAME"
+  print_title "Select branch: $BRANCHNAME"
 else
   print_error "ERROR. BRANCH NOT CORRECT. SCRIPT STOPED"
 fi
 
 #Prereq.
-DEPLOY_FOLDER="/var/www/nodes/$BRANCHNAME"
+DEPLOY_FOLDER ="/var/www/nodes/$BRANCHNAME"
 mkdir -p "$DEPLOY_FOLDER"
 print_title "Deploy folder: $DEPLOY_FOLDER"
 
