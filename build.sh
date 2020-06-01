@@ -11,13 +11,11 @@ print_title "NodeJS $(node -v)"
 print_title echo "NPM $(npm -v)"
 print_title echo "YARN $(yarn -v)"
 
-# Lint
-#FIXME: Need check
-print_info "Start linter part"
-npm run linter || true
-
 # Build
 print_info "Start build"
 yarn install
 
-
+# Linter
+#FIXME: Need check
+print_info "Start linter part"
+npm run linter || true
